@@ -1,0 +1,690 @@
+{
+	"info": {
+		"_postman_id": "ab4f6d67-4b0e-4ec0-9c45-e2e3e2d9f796",
+		"name": "AWS COGNITO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24244712"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"raveena.r@gaincredit.com\",\r\n    \"password\": \"Abcdef@23\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:105/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "105",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"raveena.r@gaincredit.com\",\r\n    \"password\": \"Abcdef@23\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:105/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "105",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Aug 2022 07:51:14 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4721"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"AuthenticationResult\": {\n        \"AccessToken\": \"eyJraWQiOiJsWWY0UndLQncxN25tZk00ZzlxVkowOHFvR2JDbWdZVHBtSWY5UTRJOHVJPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4NzY2YzQ3MS00ODE3LTQ3ZjMtYjNkNS1iYjQwZDJiYjIzMWQiLCJkZXZpY2Vfa2V5IjoiYXAtc291dGgtMV82ZTNjMTFmYy00N2FmLTQ5ZDUtYjJhOS1hY2I0NjBmNDg0ZDIiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xXzd6NHVuaUV0MyIsImNsaWVudF9pZCI6Ijc3N2ZrdGFuanI5amMwZDdicnZwNjZ2ZWdvIiwib3JpZ2luX2p0aSI6ImYyNzc1YzRiLWRhYjgtNDU1Mi1iZGYwLTFiOTM3YTJhNTc4NSIsImV2ZW50X2lkIjoiNWNkYzViOGYtMzllYi00ZTYwLWFhYTUtYmQ4ZmQwNjczZGJiIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTY2MTMyNzQ3NCwiZXhwIjoxNjYxMzMxMDc0LCJpYXQiOjE2NjEzMjc0NzQsImp0aSI6ImY5MDllYzZiLTRiNjAtNDc1Ni04ZmM2LTUyNjFkNDZhZDE1MCIsInVzZXJuYW1lIjoiODc2NmM0NzEtNDgxNy00N2YzLWIzZDUtYmI0MGQyYmIyMzFkIn0.Eh1to_G7V2xQjtQ5GTjMv_AgqGPlFiiBcceQBc-dsgx90phnvjjpz_yO356-uAhHBATwgHpetxJcesrSTJtkrRbNqQJl8dHahtnLTbBCCqM9Tac7pmAsGV0TgygXuquv31QLk6iV3r053PzGFdgr0E8RJByO9s8ciY_m56Xap5ti4Dco6zrQhfF_a2jDMonjme3CdvcnHz5qyxV6EHAclx0RRIgoHkrBbEtFaCeZU64hEjX6gZxgBGb2fO8gL93XVTByn0jEn6_PFQ-2iVdgmiakC_LCI7eDF0zcCfuxDQig8PZ7G_XXVjLMvaufpmHGAAM7lvgPngDjkSZXO1RdAg\",\n        \"ExpiresIn\": 3600,\n        \"IdToken\": \"eyJraWQiOiIwSHlxZE5NTWlnYWg0KzNaUVBIUXh1eGxmRFZiK1AyMGpiVjZIaGR4RXRFPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4NzY2YzQ3MS00ODE3LTQ3ZjMtYjNkNS1iYjQwZDJiYjIzMWQiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV83ejR1bmlFdDMiLCJjb2duaXRvOnVzZXJuYW1lIjoiODc2NmM0NzEtNDgxNy00N2YzLWIzZDUtYmI0MGQyYmIyMzFkIiwib3JpZ2luX2p0aSI6ImYyNzc1YzRiLWRhYjgtNDU1Mi1iZGYwLTFiOTM3YTJhNTc4NSIsImF1ZCI6Ijc3N2ZrdGFuanI5amMwZDdicnZwNjZ2ZWdvIiwiZXZlbnRfaWQiOiI1Y2RjNWI4Zi0zOWViLTRlNjAtYWFhNS1iZDhmZDA2NzNkYmIiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY2MTMyNzQ3NCwiZXhwIjoxNjYxMzMxMDc0LCJpYXQiOjE2NjEzMjc0NzQsImp0aSI6ImMwZGI4NTVlLWViNjgtNDc5NS05NWQ5LTlkYTI5MDkxZGI3ZSIsImVtYWlsIjoicmF2ZWVuYS5yQGdhaW5jcmVkaXQuY29tIn0.2EE7AIY--IJeYU1uuxy21-4ojODYzskWb2xvHEzDBloQC_DE9bVASt3HpNVReV8RBptdFXoRYRuVD2DXUefZqNnoO2Aw8taIo8oFIaN_eUCqBI2AVUw5rG6F2hpGKVOuW9YpwoySCAnQ0KQ445L_Wr26CyemuH5DjqSqiQ1XhDf9PXXnNGN_LwcMjIGkwoS1SC6SRpYzG7leS4HBEhtaFHwfjLKpPXRKD47KZtUS5GTH30CIUaHmGPolllMPa3JUCdYTek_JGTTGhc2-pqDDanuac8xbd0g0wOdwmfhJWfzNWGwyRWJfjQlUv5EU5Y7D4j__DyJt4KNAIaQf2E-PuA\",\n        \"NewDeviceMetadata\": {\n            \"DeviceGroupKey\": \"-5ZNHqw49\",\n            \"DeviceKey\": \"ap-south-1_6e3c11fc-47af-49d5-b2a9-acb460f484d2\"\n        },\n        \"RefreshToken\": \"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.n1JYqtwnrgL2lLjYzpH4YDYwM1a35VRc_jSDn7ntop0O5lrTHAyQDW6zOnkgjVl-1I-tEeXXorbeNV7zholWMtBZzIDFVlZx7n76eZWSOJwVTAW4uP-cQZngWxINll11B4Q-x9iEy6-BPFoi7hotZ2G9Zjyzv-QSRLxOe6bDbMR8ZbPQHiB2-3IJpFSkcoM8NZyDPLu_3hCTP2vtvqLXphLP6-te5YGigOLcRqCSkrA0t1Jr5Pd2fWkI5hP9X4evJbDc1nY1M1xBSdHk0SItvaMiZ3n5-UN0lTdgHJIbr6z5WN_VHg5xHLrhWZH2S7R7-FcAEm2649cDiMv0WeCHEA.4eid7LyFFUnXK0hj.MjM86fxJIBTNWtBVAk36EpdlKz8sJKbdpORSFs5dQ1MyBttAjkcrU6hkg74CF6h61B08l4DDtBdWtqM44REesZGZUWg_rd_pI4uTF3TbETz48W_Ba9AGNO3TrS_B48yF_42JRGMPfb8RlIuvkcCojK1uJL_dmtvMy8tXdq3gna0T9Y1JFpsQlWU5tcSVIUWRu9iLO_kg19aFZCOeQDLa6pdIIfqLMmtZVfQPuQK0zdnB5j4MLsIEoxXz2uROwVoQMzp_Z3NjPfVmniet3hWM9q-ls-fQXU9f5O_XpJYrd5LKQLKIbTmqprS16RyDQ5krsSWTnDKFYqBpoKD646xgZ1O4YBP2BcZk0zn3S8tvj-YLkwZhu0mEo5rEjPDRMaSOVoesrasdPbvG8xl2W_l-H5pNJyIqrCjsHqL4c3kTwEUxkkbVrvmUJLSbDKESeR9C5Uc1ASiVK_I3U5dDbYw3k-GmvhoaXpcBAJlTSbe5uEnG6pr2mGOtvU2K6ZJctVR9lZlQ0KHkY-HyFI10DlOJTujRTpdV-0-nWfGBOdtMW4FJPQIrOoZdFhBiUKxdAH4aM1dMsEi58dh0UKa2pbDSKoRWewg0U6ye5KuFlgruZHdZBezlVHvXRJeJiWQr0JhV8mSCfwx9sYeDyLo7cyBBCrnNB1_0jMxQfLUM_jgdAPQ13_YXQB7ZyP_a-NEnmHLTG-jRv_9f2GxxdX1n8HninndBBXNcjU_GLksoRJn8wZsrlxlnlltLzf9_yluseYPId7VZUvBOXxauyTrzVZ9pGptAUD26aTO4X1sRTPZykyTTTftgHAX4AH9-6UWOAE1RAxsqKyHugE03WmsO-rRFCIQP7MOP7RAfPR-0Rhxl3MAIKgGlVdHcYkD9zwYhkTcZLm0B2BzZOeYU9nTT8jQNdogwbXUBtdeQfB6X0pO0PP9cLOfWGXyICP0b851BHgHpgsdEptCet7BwM7y4TLVsUaeq5K20q5MQNvNzOL7bzezF35I3Kt-gTPN2kEr8fvmXhftgpdi9Pfr3N5i0SGOFo46dhZabE8jO9FkiBnQEGS8UdBCxdvkcBPrQ6qsTikqwWnYnLp5bGBXBkAdfQQTk8XbbqEQwNYob0w1yMhpHrgGKH5uoGtl0FM1O-DORtFFqmytgZE2cKyo5toIzu6G7-gZluPS97p7bUuk8q6Kr5vsYfZ8aOnyriWeUqvTNhcMKkHwT2VO3I6a_f8qL5Vwb4E6ICJiu8JD4s-96rKDdRfNZaJvDy5BHgRSH4_GvNwRAKHBpBxWYpeOPHFsY2uLVDk0xugTu6N7u3QsXHpui0_7M0M3-Xe6iGil9CAFl5KkLp4M4NipBLeUpy3jZy9gLn-bGU-_2GjkAZqQtxg6MmBbw-bnB7uas9kdcTlcdBhOMy-etLIeg0vyUsXer7XR68XvHarbL6jBQAeV8kjPDzFHCWQ.IZc8tfwAvbLFrz29DAppcw\",\n        \"TokenType\": \"Bearer\"\n    },\n    \"ChallengeParameters\": {},\n    \"ResponseMetadata\": {\n        \"HTTPHeaders\": {\n            \"connection\": \"keep-alive\",\n            \"content-length\": \"4402\",\n            \"content-type\": \"application/x-amz-json-1.1\",\n            \"date\": \"Wed, 24 Aug 2022 07:51:14 GMT\",\n            \"x-amzn-requestid\": \"5cdc5b8f-39eb-4e60-aaa5-bd8fd0673dbb\"\n        },\n        \"HTTPStatusCode\": 200,\n        \"RequestId\": \"5cdc5b8f-39eb-4e60-aaa5-bd8fd0673dbb\",\n        \"RetryAttempts\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Change Pass",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"old_pass\": \"Bond6102@\",\r\n    \"new_pass\": \"Abcdef6102@\",\r\n    \"access_token\": \"eyJraWQiOiJsWWY0UndLQncxN25tZk00ZzlxVkowOHFvR2JDbWdZVHBtSWY5UTRJOHVJPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI2NTMzZWViMi1mZGYzLTQwMDUtYjVjYi0xZDZlYzNjYWE1YWMiLCJkZXZpY2Vfa2V5IjoiYXAtc291dGgtMV83MDZhNjY4Zi1kYzcyLTQxNmMtYjE0OC0xNDk1MDdiODNhMTciLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xXzd6NHVuaUV0MyIsImNsaWVudF9pZCI6Ijc3N2ZrdGFuanI5amMwZDdicnZwNjZ2ZWdvIiwib3JpZ2luX2p0aSI6Ijk5OTQ2ZmE1LWUzZjAtNDU0NS1hZWZhLWExNGIzZWQ3MTM3YyIsImV2ZW50X2lkIjoiMjQwOTZjNmMtZWQwOS00NzU3LWExYmItNDcxNjg3NTY1NmUyIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTY2MTMyNjYwMiwiZXhwIjoxNjYxMzMwMjAyLCJpYXQiOjE2NjEzMjY2MDIsImp0aSI6IjIwY2UyYzEwLTEwNzEtNDk2YS1iZmI0LWYxYWVkMDg5MzI2YiIsInVzZXJuYW1lIjoiNjUzM2VlYjItZmRmMy00MDA1LWI1Y2ItMWQ2ZWMzY2FhNWFjIn0.uZLBZQi9ZRQK7B8mHz_IzJlRwJDsYKqVdM65M8a3Q7zrtzM662bX3s95M-f_JVkMH11oCAPuq0Rfyf-CAiV5TNzsqDJEj0gRxzctPLxrJTvVEpLtTNlPtmmY-8BlFC7WWfgp81VnvABqN6gwvZTzUGJZ_iPmWXY9Zij_Q14L8CjDl0dKVrujVaSB6e-MA0VLtgnXWb2D6Evregcg6oTC3h604kL5KUQXei7PJJAY83dGtujIhpSbzVfQI9d9mf3YU5qzfd6d44WhjYiRZ1h5a3qG-dWl_zjyBeqbvwtMBcOw9ITZuRgg4CEVHen4uP-JHEPQ_Ny0Rie9PcJB8e080Q\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:105/change_password",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "105",
+					"path": [
+						"change_password"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Change Pass",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"old_pass\": \"Bond6102@\",\r\n    \"new_pass\": \"Abcdef6102@\",\r\n    \"access_token\": \"eyJraWQiOiJsWWY0UndLQncxN25tZk00ZzlxVkowOHFvR2JDbWdZVHBtSWY5UTRJOHVJPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI2NTMzZWViMi1mZGYzLTQwMDUtYjVjYi0xZDZlYzNjYWE1YWMiLCJkZXZpY2Vfa2V5IjoiYXAtc291dGgtMV83MDZhNjY4Zi1kYzcyLTQxNmMtYjE0OC0xNDk1MDdiODNhMTciLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xXzd6NHVuaUV0MyIsImNsaWVudF9pZCI6Ijc3N2ZrdGFuanI5amMwZDdicnZwNjZ2ZWdvIiwib3JpZ2luX2p0aSI6Ijk5OTQ2ZmE1LWUzZjAtNDU0NS1hZWZhLWExNGIzZWQ3MTM3YyIsImV2ZW50X2lkIjoiMjQwOTZjNmMtZWQwOS00NzU3LWExYmItNDcxNjg3NTY1NmUyIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTY2MTMyNjYwMiwiZXhwIjoxNjYxMzMwMjAyLCJpYXQiOjE2NjEzMjY2MDIsImp0aSI6IjIwY2UyYzEwLTEwNzEtNDk2YS1iZmI0LWYxYWVkMDg5MzI2YiIsInVzZXJuYW1lIjoiNjUzM2VlYjItZmRmMy00MDA1LWI1Y2ItMWQ2ZWMzY2FhNWFjIn0.uZLBZQi9ZRQK7B8mHz_IzJlRwJDsYKqVdM65M8a3Q7zrtzM662bX3s95M-f_JVkMH11oCAPuq0Rfyf-CAiV5TNzsqDJEj0gRxzctPLxrJTvVEpLtTNlPtmmY-8BlFC7WWfgp81VnvABqN6gwvZTzUGJZ_iPmWXY9Zij_Q14L8CjDl0dKVrujVaSB6e-MA0VLtgnXWb2D6Evregcg6oTC3h604kL5KUQXei7PJJAY83dGtujIhpSbzVfQI9d9mf3YU5qzfd6d44WhjYiRZ1h5a3qG-dWl_zjyBeqbvwtMBcOw9ITZuRgg4CEVHen4uP-JHEPQ_Ny0Rie9PcJB8e080Q\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:105/change_password",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "105",
+							"path": [
+								"change_password"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Aug 2022 07:46:30 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "317"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"ResponseMetadata\": {\n        \"HTTPHeaders\": {\n            \"connection\": \"keep-alive\",\n            \"content-length\": \"2\",\n            \"content-type\": \"application/x-amz-json-1.1\",\n            \"date\": \"Wed, 24 Aug 2022 07:46:30 GMT\",\n            \"x-amzn-requestid\": \"494868f4-b8bd-4f79-aa67-2fcc4c8cfee6\"\n        },\n        \"HTTPStatusCode\": 200,\n        \"RequestId\": \"494868f4-b8bd-4f79-aa67-2fcc4c8cfee6\",\n        \"RetryAttempts\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"old_pass\": \"Bond6102@\",\r\n    \"new_pass\": \"Abcdef6102@\",\r\n    \"access_token\": \"eyJraWQiOiJsWWY0UndLQncxN25tZk00ZzlxVkowOHFvR2JDbWdZVHBtSWY5UTRJOHVJPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI2NTMzZWViMi1mZGYzLTQwMDUtYjVjYi0xZDZlYzNjYWE1YWMiLCJkZXZpY2Vfa2V5IjoiYXAtc291dGgtMV83MDZhNjY4Zi1kYzcyLTQxNmMtYjE0OC0xNDk1MDdiODNhMTciLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xXzd6NHVuaUV0MyIsImNsaWVudF9pZCI6Ijc3N2ZrdGFuanI5amMwZDdicnZwNjZ2ZWdvIiwib3JpZ2luX2p0aSI6Ijk5OTQ2ZmE1LWUzZjAtNDU0NS1hZWZhLWExNGIzZWQ3MTM3YyIsImV2ZW50X2lkIjoiMjQwOTZjNmMtZWQwOS00NzU3LWExYmItNDcxNjg3NTY1NmUyIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTY2MTMyNjYwMiwiZXhwIjoxNjYxMzMwMjAyLCJpYXQiOjE2NjEzMjY2MDIsImp0aSI6IjIwY2UyYzEwLTEwNzEtNDk2YS1iZmI0LWYxYWVkMDg5MzI2YiIsInVzZXJuYW1lIjoiNjUzM2VlYjItZmRmMy00MDA1LWI1Y2ItMWQ2ZWMzY2FhNWFjIn0.uZLBZQi9ZRQK7B8mHz_IzJlRwJDsYKqVdM65M8a3Q7zrtzM662bX3s95M-f_JVkMH11oCAPuq0Rfyf-CAiV5TNzsqDJEj0gRxzctPLxrJTvVEpLtTNlPtmmY-8BlFC7WWfgp81VnvABqN6gwvZTzUGJZ_iPmWXY9Zij_Q14L8CjDl0dKVrujVaSB6e-MA0VLtgnXWb2D6Evregcg6oTC3h604kL5KUQXei7PJJAY83dGtujIhpSbzVfQI9d9mf3YU5qzfd6d44WhjYiRZ1h5a3qG-dWl_zjyBeqbvwtMBcOw9ITZuRgg4CEVHen4uP-JHEPQ_Ny0Rie9PcJB8e080Q\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:105/change_password",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "105",
+					"path": [
+						"change_password"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \"access_token\": \"eyJraWQiOiJsWWY0UndLQncxN25tZk00ZzlxVkowOHFvR2JDbWdZVHBtSWY5UTRJOHVJPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4NzY2YzQ3MS00ODE3LTQ3ZjMtYjNkNS1iYjQwZDJiYjIzMWQiLCJkZXZpY2Vfa2V5IjoiYXAtc291dGgtMV82ZTNjMTFmYy00N2FmLTQ5ZDUtYjJhOS1hY2I0NjBmNDg0ZDIiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xXzd6NHVuaUV0MyIsImNsaWVudF9pZCI6Ijc3N2ZrdGFuanI5amMwZDdicnZwNjZ2ZWdvIiwib3JpZ2luX2p0aSI6ImYyNzc1YzRiLWRhYjgtNDU1Mi1iZGYwLTFiOTM3YTJhNTc4NSIsImV2ZW50X2lkIjoiNWNkYzViOGYtMzllYi00ZTYwLWFhYTUtYmQ4ZmQwNjczZGJiIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTY2MTMyNzQ3NCwiZXhwIjoxNjYxMzMxMDc0LCJpYXQiOjE2NjEzMjc0NzQsImp0aSI6ImY5MDllYzZiLTRiNjAtNDc1Ni04ZmM2LTUyNjFkNDZhZDE1MCIsInVzZXJuYW1lIjoiODc2NmM0NzEtNDgxNy00N2YzLWIzZDUtYmI0MGQyYmIyMzFkIn0.Eh1to_G7V2xQjtQ5GTjMv_AgqGPlFiiBcceQBc-dsgx90phnvjjpz_yO356-uAhHBATwgHpetxJcesrSTJtkrRbNqQJl8dHahtnLTbBCCqM9Tac7pmAsGV0TgygXuquv31QLk6iV3r053PzGFdgr0E8RJByO9s8ciY_m56Xap5ti4Dco6zrQhfF_a2jDMonjme3CdvcnHz5qyxV6EHAclx0RRIgoHkrBbEtFaCeZU64hEjX6gZxgBGb2fO8gL93XVTByn0jEn6_PFQ-2iVdgmiakC_LCI7eDF0zcCfuxDQig8PZ7G_XXVjLMvaufpmHGAAM7lvgPngDjkSZXO1RdAg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:105/get_user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "105",
+							"path": [
+								"get_user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Aug 2022 07:55:26 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "37"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"email\": \"raveena.r@gaincredit.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Forgot Pass Trigger OTP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"raveena.r@gaincredit.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:105/forgot_password_sendmail",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "105",
+					"path": [
+						"forgot_password_sendmail"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Forgot Pass Trigger OTP",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"raveena.r@gaincredit.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:105/forgot_password_sendmail",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "105",
+							"path": [
+								"forgot_password_sendmail"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Aug 2022 07:48:01 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "418"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"CodeDeliveryDetails\": {\n        \"AttributeName\": \"email\",\n        \"DeliveryMedium\": \"EMAIL\",\n        \"Destination\": \"r***@g***\"\n    },\n    \"ResponseMetadata\": {\n        \"HTTPHeaders\": {\n            \"connection\": \"keep-alive\",\n            \"content-length\": \"100\",\n            \"content-type\": \"application/x-amz-json-1.1\",\n            \"date\": \"Wed, 24 Aug 2022 07:48:01 GMT\",\n            \"x-amzn-requestid\": \"ebdc0a69-b638-4925-ad9b-b31339904cdf\"\n        },\n        \"HTTPStatusCode\": 200,\n        \"RequestId\": \"ebdc0a69-b638-4925-ad9b-b31339904cdf\",\n        \"RetryAttempts\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Forgot Pass Enter Code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"raveena.r@gaincredit.com\",\r\n    \"code\": \"790133\",\r\n    \"new_password\": \"Abcdef@23\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:105/forgot_password_entercode",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "105",
+					"path": [
+						"forgot_password_entercode"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Forgot Pass Enter Code",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"raveena.r@gaincredit.com\",\r\n    \"code\": \"790133\",\r\n    \"new_password\": \"Abcdef@23\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:105/forgot_password_entercode",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "105",
+							"path": [
+								"forgot_password_entercode"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Aug 2022 07:49:07 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "317"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"ResponseMetadata\": {\n        \"HTTPHeaders\": {\n            \"connection\": \"keep-alive\",\n            \"content-length\": \"2\",\n            \"content-type\": \"application/x-amz-json-1.1\",\n            \"date\": \"Wed, 24 Aug 2022 07:49:08 GMT\",\n            \"x-amzn-requestid\": \"7bb56419-6d4b-4c3e-a3ba-09563f19daec\"\n        },\n        \"HTTPStatusCode\": 200,\n        \"RequestId\": \"7bb56419-6d4b-4c3e-a3ba-09563f19daec\",\n        \"RetryAttempts\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"ravenaaramesh23@gmail.com\",\r\n\"new_password\": \"Miniiiii@23\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:105/signup1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "105",
+					"path": [
+						"signup1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"username\": \"ravenaaramesh23@gmail.com\",\r\n\"new_password\": \"Miniiiii@23\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:105/signup1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "105",
+							"path": [
+								"signup1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Aug 2022 08:12:21 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "489"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"CodeDeliveryDetails\": {\n        \"AttributeName\": \"email\",\n        \"DeliveryMedium\": \"EMAIL\",\n        \"Destination\": \"r***@g***\"\n    },\n    \"ResponseMetadata\": {\n        \"HTTPHeaders\": {\n            \"connection\": \"keep-alive\",\n            \"content-length\": \"171\",\n            \"content-type\": \"application/x-amz-json-1.1\",\n            \"date\": \"Wed, 24 Aug 2022 08:12:21 GMT\",\n            \"x-amzn-requestid\": \"d5667697-449d-4e98-9c07-5b61095550b4\"\n        },\n        \"HTTPStatusCode\": 200,\n        \"RequestId\": \"d5667697-449d-4e98-9c07-5b61095550b4\",\n        \"RetryAttempts\": 0\n    },\n    \"UserConfirmed\": false,\n    \"UserSub\": \"4359d5f9-1d01-433a-8192-cc52cedb9dc6\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Signup Verification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"ravenaaramesh23@gmail.com\",\r\n\"code\": \"372885\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:105/signup2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "105",
+					"path": [
+						"signup2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"username\": \"ravenaaramesh23@gmail.com\",\r\n\"new_password\": \"Miniiiii@23\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:105/signup1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "105",
+							"path": [
+								"signup1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Aug 2022 08:12:21 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "489"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"CodeDeliveryDetails\": {\n        \"AttributeName\": \"email\",\n        \"DeliveryMedium\": \"EMAIL\",\n        \"Destination\": \"r***@g***\"\n    },\n    \"ResponseMetadata\": {\n        \"HTTPHeaders\": {\n            \"connection\": \"keep-alive\",\n            \"content-length\": \"171\",\n            \"content-type\": \"application/x-amz-json-1.1\",\n            \"date\": \"Wed, 24 Aug 2022 08:12:21 GMT\",\n            \"x-amzn-requestid\": \"d5667697-449d-4e98-9c07-5b61095550b4\"\n        },\n        \"HTTPStatusCode\": 200,\n        \"RequestId\": \"d5667697-449d-4e98-9c07-5b61095550b4\",\n        \"RetryAttempts\": 0\n    },\n    \"UserConfirmed\": false,\n    \"UserSub\": \"4359d5f9-1d01-433a-8192-cc52cedb9dc6\"\n}"
+				},
+				{
+					"name": "New Request Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"username\": \"ravenaaramesh23@gmail.com\",\r\n\"code\": \"372885\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:105/signup2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "105",
+							"path": [
+								"signup2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 24 Aug 2022 08:14:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "317"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"ResponseMetadata\": {\n        \"HTTPHeaders\": {\n            \"connection\": \"keep-alive\",\n            \"content-length\": \"2\",\n            \"content-type\": \"application/x-amz-json-1.1\",\n            \"date\": \"Wed, 24 Aug 2022 08:14:16 GMT\",\n            \"x-amzn-requestid\": \"47c6f0b4-96df-447a-b84d-c2a6ed43603c\"\n        },\n        \"HTTPStatusCode\": 200,\n        \"RequestId\": \"47c6f0b4-96df-447a-b84d-c2a6ed43603c\",\n        \"RetryAttempts\": 0\n    }\n}"
+				}
+			]
+		}
+	]
+}

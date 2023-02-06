@@ -1,0 +1,28 @@
+1.Auto login
+Use case:
+1.LP approved and his account and application details are matching and coming to landing page with in 60 sec
+
+
+
+2.PII login --> DOB only
+Use Case
+1.LP or website leads accessing valid post approval link via SMS or email (withdrwal/approved email)
+2.After 3 continous unsuccessful attempts we will ask user to login via email and password for that approved lead
+
+
+
+3.PII login --> Email & DOB
+Use case
+1.LP approved and his account and application details are matching and coming to landing page after 60 sec of application created time
+2.After 3 unsuccessful attempts we will ask user to login via email and password for that approved lead
+
+
+
+
+4.Email & OTP login
+use case
+1.LP lead and all of account and application details (First name, last name, email, dob & mobile number) not matching exactly but email and DOB detail is matching.
+2.After 5 unsuccessful attempts we will ask user to login via email and password for next 24 hours.
+
+
+
